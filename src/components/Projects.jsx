@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
-import { FiExternalLink, FiX } from "react-icons/fi";
+import { FiX } from "react-icons/fi";
 
 import ecommerceImg from "../assets/ecommerce.png";
 import resumeImg from "../assets/resume-builder.png";
@@ -76,7 +76,6 @@ const projects = [
       },
     ],
     github: "https://github.com/YOUR_GITHUB_USERNAME/ecommerce",
-    live: "https://your-ecommerce-demo.vercel.app",
   },
   {
     title: "AI Resume Builder SaaS",
@@ -124,7 +123,6 @@ const projects = [
       },
     ],
     github: "https://github.com/YOUR_GITHUB_USERNAME/ai-resume-builder",
-    live: "https://your-resume-builder.vercel.app",
   },
 ];
 
@@ -213,10 +211,10 @@ function Projects() {
                   ))}
                 </div>
 
-                <div className="flex flex-wrap gap-4">
+                <div className="flex flex-wrap gap-3">
                   <button
                     onClick={() => setSelectedProject(project)}
-                    className="border border-cyan-400 text-cyan-400 px-4 py-2 rounded-xl hover:bg-cyan-400 hover:text-slate-950 transition"
+                    className="min-w-32 border border-cyan-400 text-cyan-400 px-5 py-2.5 rounded-xl font-medium hover:bg-cyan-400 hover:text-slate-950 transition"
                   >
                     View Details
                   </button>
@@ -225,20 +223,10 @@ function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 border border-white/15 px-4 py-2 rounded-xl hover:bg-white hover:text-slate-950 transition"
+                    className="min-w-32 flex items-center justify-center gap-2 border border-white/15 px-5 py-2.5 rounded-xl font-medium hover:bg-white hover:text-slate-950 transition"
                   >
                     <FaGithub />
                     GitHub
-                  </a>
-
-                  <a
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2 bg-cyan-400 text-slate-950 px-4 py-2 rounded-xl hover:bg-cyan-300 transition"
-                  >
-                    <FiExternalLink />
-                    Live Demo
                   </a>
                 </div>
               </div>
@@ -349,25 +337,15 @@ function Projects() {
                 ))}
               </div>
 
-              <div className="flex flex-wrap gap-4">
+              <div className="flex flex-wrap gap-3">
                 <a
                   href={selectedProject.github}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 border border-white/15 px-4 py-2 rounded-xl hover:bg-white hover:text-slate-950 transition"
+                  className="min-w-32 flex items-center justify-center gap-2 border border-white/15 px-5 py-2.5 rounded-xl font-medium hover:bg-white hover:text-slate-950 transition"
                 >
                   <FaGithub />
                   GitHub
-                </a>
-
-                <a
-                  href={selectedProject.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 bg-cyan-400 text-slate-950 px-4 py-2 rounded-xl hover:bg-cyan-300 transition"
-                >
-                  <FiExternalLink />
-                  Live Demo
                 </a>
               </div>
             </div>

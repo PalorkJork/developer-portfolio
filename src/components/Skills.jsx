@@ -8,6 +8,7 @@ import {
   FaNodeJs,
   FaGitAlt,
   FaGithub,
+  FaUserShield,
 } from "react-icons/fa"
 
 import {
@@ -28,7 +29,7 @@ const skills = [
   { name: "Shadcn UI", icon: <SiShadcnui /> },
   { name: "Node.js", icon: <FaNodeJs /> },
   { name: "Express.js", icon: <SiExpress /> },
-  { name: "Authentication", icon: "🔐" },
+  { name: "Authentication", icon: <FaUserShield /> },
   { name: "PostgreSQL", icon: <SiPostgresql /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "GitHub", icon: <FaGithub /> },
@@ -50,9 +51,10 @@ function Skills() {
             <div className="flex gap-5 animate-scroll w-max">
               {repeatedSkills.map((skill, index) => (
                 <div
-                  key={index}
+                  key={`${skill.name}-${index}`}
                   className="
                     min-w-[160px]
+                    h-36
                     flex
                     flex-col
                     items-center
@@ -70,11 +72,11 @@ function Skills() {
                     duration-300
                   "
                 >
-                  <div className="text-4xl text-cyan-400">
+                  <div className="h-12 w-12 flex items-center justify-center text-[2.5rem] leading-none text-cyan-400">
                     {skill.icon}
                   </div>
 
-                  <span className="text-slate-300 text-sm">
+                  <span className="text-slate-300 text-sm font-medium text-center">
                     {skill.name}
                   </span>
                 </div>

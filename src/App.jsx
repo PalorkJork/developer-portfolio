@@ -6,7 +6,6 @@ import Skills from "./components/Skills"
 import Experience from "./components/Experience"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
-import GitHubStats from "./components/GitHubStats"
 import ScrollToTop from "./components/ScrollToTop"
 import CursorGlow from "./components/CursorGlow"
 
