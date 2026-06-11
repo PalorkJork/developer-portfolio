@@ -81,7 +81,7 @@ function Hero() {
             </a>
 
             <a
-              href="/Chou-Sereyvisoth-Resume.pdf"
+              href="/public/chousereyvisoth-cv.pdf"
 target="_blank"
 rel="noopener noreferrer"
               className="flex items-center gap-2 border border-white/15 px-6 py-3 rounded-xl hover:bg-white hover:text-slate-950 transition"
