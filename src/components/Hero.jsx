@@ -81,13 +81,23 @@ function Hero() {
             </a>
 
             <a
-              href="/public/chousereyvisoth-cv.pdf"
-target="_blank"
-rel="noopener noreferrer"
+              href="/chousereyvisoth-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 border border-white/15 px-6 py-3 rounded-xl hover:bg-white hover:text-slate-950 transition"
             >
               <FiDownload />
               Resume
+            </a>
+
+            <a
+              href="/chousereyvisothPortfolio.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 border border-purple-400/40 text-purple-300 px-6 py-3 rounded-xl hover:bg-purple-400 hover:text-slate-950 transition"
+            >
+              <FiDownload />
+              Design Portfolio
             </a>
           </motion.div>
 

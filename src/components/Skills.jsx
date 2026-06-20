@@ -1,4 +1,5 @@
 import SectionTitle from "./SectionTitle"
+import { FiPenTool, FiImage } from "react-icons/fi"
 
 import {
   FaHtml5,
@@ -17,6 +18,7 @@ import {
   SiExpress,
   SiPostgresql,
   SiShadcnui,
+  SiFigma,
 } from "react-icons/si"
 
 const skills = [
@@ -33,6 +35,9 @@ const skills = [
   { name: "PostgreSQL", icon: <SiPostgresql /> },
   { name: "Git", icon: <FaGitAlt /> },
   { name: "GitHub", icon: <FaGithub /> },
+  { name: "Photoshop", icon: <FiImage />, color: "text-blue-400" },
+  { name: "Illustrator", icon: <FiPenTool />, color: "text-orange-400" },
+  { name: "Figma", icon: <SiFigma />, color: "text-purple-400" },
 ]
 
 function Skills() {
@@ -72,7 +77,7 @@ function Skills() {
                     duration-300
                   "
                 >
-                  <div className="h-12 w-12 flex items-center justify-center text-[2.5rem] leading-none text-cyan-400">
+                  <div className={`h-12 w-12 flex items-center justify-center text-[2.5rem] leading-none ${skill.color ?? "text-cyan-400"}`}>
                     {skill.icon}
                   </div>
 

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion"
 import SectionTitle from "./SectionTitle"
-import { FiCode, FiServer, FiDatabase, FiTool } from "react-icons/fi"
+import { FiCode, FiServer, FiDatabase, FiTool, FiPenTool } from "react-icons/fi"
 
 const highlights = [
   {
@@ -22,6 +22,11 @@ const highlights = [
     icon: <FiTool />,
     title: "Tools",
     text: "Git, GitHub",
+  },
+  {
+    icon: <FiPenTool />,
+    title: "Design",
+    text: "Adobe Photoshop, Adobe Illustrator, Figma",
   },
 ]
 
@@ -53,6 +58,13 @@ function About() {
             <p>
               My goal is to create clean, user-friendly products that solve
               real problems and provide a smooth user experience.
+            </p>
+
+            <p>
+              Outside of development, I also do graphic design — mostly product
+              posters, social media graphics, and digital illustrations. I work
+              mainly in Adobe Photoshop, with Illustrator for vector work and
+              Figma for UI design.
             </p>
           </motion.div>
 
