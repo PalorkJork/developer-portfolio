@@ -4,28 +4,28 @@ import { FiX, FiChevronLeft, FiChevronRight, FiZoomIn } from "react-icons/fi";
 import SectionTitle from "./SectionTitle";
 
 // ── Image imports ──────────────────────────────────────────────────────────
-import img1  from "../assets/design/1.png";
-import img2  from "../assets/design/2 new.png";
-import img4  from "../assets/design/3 neww.png";
-import img5  from "../assets/design/Banner_Mockup.png";
-import img6  from "../assets/design/Coffee.png";
-import img7  from "../assets/design/Food.png";
-import img8  from "../assets/design/Liverpool Poster.png";
-import img9  from "../assets/design/NEON DEER.png";
-import img10 from "../assets/design/PalorkJorkFood.png";
-import img11 from "../assets/design/Pchum Ben.png";
-import img12 from "../assets/design/Sneaker.png";
-import img13 from "../assets/design/Sony.png";
-import img14 from "../assets/design/burger final.png";
-import img15 from "../assets/design/burger.png";
-import img16 from "../assets/design/food-banner.png";
-import img18 from "../assets/design/iwatch.png";
-import img19 from "../assets/design/jeep.png";
-import img20 from "../assets/design/luffy.png";
-import img21 from "../assets/design/matcha.png";
-import img22 from "../assets/design/new1.png";
-import img23 from "../assets/design/photo_2026-06-01_16-33-37.jpg";
-import img24 from "../assets/design/sprite.png";
+import img1  from "../assets/design/1.webp";
+import img2  from "../assets/design/2 new.webp";
+import img4  from "../assets/design/3 neww.webp";
+import img5  from "../assets/design/Banner_Mockup.webp";
+import img6  from "../assets/design/Coffee.webp";
+import img7  from "../assets/design/Food.webp";
+import img8  from "../assets/design/Liverpool Poster.webp";
+import img9  from "../assets/design/NEON DEER.webp";
+import img10 from "../assets/design/PalorkJorkFood.webp";
+import img11 from "../assets/design/Pchum Ben.webp";
+import img12 from "../assets/design/Sneaker.webp";
+import img13 from "../assets/design/Sony.webp";
+import img14 from "../assets/design/burger final.webp";
+import img15 from "../assets/design/burger.webp";
+import img16 from "../assets/design/food-banner.webp";
+import img18 from "../assets/design/iwatch.webp";
+import img19 from "../assets/design/jeep.webp";
+import img20 from "../assets/design/luffy.webp";
+import img21 from "../assets/design/matcha.webp";
+import img22 from "../assets/design/new1.webp";
+import img23 from "../assets/design/photo_2026-06-01_16-33-37.webp";
+import img24 from "../assets/design/sprite.webp";
 
 // ── Project data (order set by designer) ──────────────────────────────────
 const designProjects = [

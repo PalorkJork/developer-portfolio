@@ -3,7 +3,7 @@ import { TypeAnimation } from "react-type-animation"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { FiDownload, FiArrowRight } from "react-icons/fi"
 
-import profileImg from "../assets/chousereyvisoth.png"
+import profileImg from "../assets/chousereyvisoth.webp"
 
 function Hero() {
   return (
@@ -142,6 +142,10 @@ function Hero() {
               src={profileImg}
               alt="Chou Sereyvisoth"
               className="w-72 h-72 md:w-96 md:h-96 object-cover rounded-[1.5rem]"
+              width={384}
+              height={384}
+              loading="eager"
+              decoding="async"
             />
 
             <div className="absolute -bottom-5 -left-5 bg-slate-900 border border-white/10 rounded-2xl px-5 py-4 shadow-xl">

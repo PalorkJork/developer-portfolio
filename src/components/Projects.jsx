@@ -4,22 +4,22 @@ import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 
-import ecommerceImg from "../assets/ecommerce.png";
-import resumeImg from "../assets/resume-builder.png";
+import ecommerceImg from "../assets/ecommerce.webp";
+import resumeImg from "../assets/resume-builder.webp";
 
-import ecommerceHome from "../assets/ecommerce-home.png";
-import ecommerceCategory from "../assets/ecommerce-category.png";
-import ecommerceProduct from "../assets/ecommerce-product.png";
-import ecommerceCart from "../assets/ecommerce-cart.png";
-import ecommerceOrder from "../assets/ecommerce-order.png";
-import ecommerceDashboard from "../assets/ecommerce-dashboard.png";
-import ecommerceDarkMode from "../assets/ecommerce-dark-mode.png";
+import ecommerceHome from "../assets/ecommerce-home.webp";
+import ecommerceCategory from "../assets/ecommerce-category.webp";
+import ecommerceProduct from "../assets/ecommerce-product.webp";
+import ecommerceCart from "../assets/ecommerce-cart.webp";
+import ecommerceOrder from "../assets/ecommerce-order.webp";
+import ecommerceDashboard from "../assets/ecommerce-dashboard.webp";
+import ecommerceDarkMode from "../assets/ecommerce-dark-mode.webp";
 
-import resumeHome from "../assets/resume-home.png";
-import resumeLogin from "../assets/resume-login.png";
-import resumeEdit from "../assets/resume-edit.png";
-import resumePreview from "../assets/resume-preview.png";
-import resumeDashboard from "../assets/resume-dashboard.png";
+import resumeHome from "../assets/resume-home.webp";
+import resumeLogin from "../assets/resume-login.webp";
+import resumeEdit from "../assets/resume-edit.webp";
+import resumePreview from "../assets/resume-preview.webp";
+import resumeDashboard from "../assets/resume-dashboard.webp";
 
 const projects = [
   {
@@ -46,34 +46,13 @@ const projects = [
     ],
     image: ecommerceImg,
     screenshots: [
-      {
-        title: "Home Page",
-        image: ecommerceHome,
-      },
-      {
-        title: "Category Page",
-        image: ecommerceCategory,
-      },
-      {
-        title: "Product Details",
-        image: ecommerceProduct,
-      },
-      {
-        title: "Shopping Cart",
-        image: ecommerceCart,
-      },
-      {
-        title: "Orders",
-        image: ecommerceOrder,
-      },
-      {
-        title: "Dashboard",
-        image: ecommerceDashboard,
-      },
-      {
-        title: "Dark Mode",
-        image: ecommerceDarkMode,
-      },
+      { title: "Home Page", image: ecommerceHome },
+      { title: "Category Page", image: ecommerceCategory },
+      { title: "Product Details", image: ecommerceProduct },
+      { title: "Shopping Cart", image: ecommerceCart },
+      { title: "Orders", image: ecommerceOrder },
+      { title: "Dashboard", image: ecommerceDashboard },
+      { title: "Dark Mode", image: ecommerceDarkMode },
     ],
     github: "https://github.com/YOUR_GITHUB_USERNAME/ecommerce",
   },
@@ -101,26 +80,11 @@ const projects = [
     ],
     image: resumeImg,
     screenshots: [
-      {
-        title: "Landing Page",
-        image: resumeHome,
-      },
-      {
-        title: "Login",
-        image: resumeLogin,
-      },
-      {
-        title: "Resume Editor",
-        image: resumeEdit,
-      },
-      {
-        title: "Resume Preview",
-        image: resumePreview,
-      },
-      {
-        title: "Dashboard",
-        image: resumeDashboard,
-      },
+      { title: "Landing Page", image: resumeHome },
+      { title: "Login", image: resumeLogin },
+      { title: "Resume Editor", image: resumeEdit },
+      { title: "Resume Preview", image: resumePreview },
+      { title: "Dashboard", image: resumeDashboard },
     ],
     github: "https://github.com/YOUR_GITHUB_USERNAME/ai-resume-builder",
   },
@@ -184,6 +148,8 @@ function Projects() {
                   src={project.image}
                   alt={project.title}
                   className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
+                  decoding="async"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent"></div>
@@ -258,6 +224,8 @@ function Projects() {
               src={selectedProject.image}
               alt={selectedProject.title}
               className="w-full h-64 object-cover rounded-t-3xl"
+              loading="lazy"
+              decoding="async"
             />
 
             <div className="p-8">
@@ -281,27 +249,15 @@ function Projects() {
                 {selectedProject.screenshots.map((shot, index) => (
                   <div
                     key={index}
-                    className="
-        overflow-hidden
-        rounded-2xl
-        border
-        border-white/10
-        bg-white/5
-      "
+                    className="overflow-hidden rounded-2xl border border-white/10 bg-white/5"
                   >
                     <img
                       src={shot.image}
                       alt={shot.title}
                       onClick={() => setActiveImage(shot)}
-                      className="
-    w-full
-    h-48
-    object-cover
-    cursor-pointer
-    hover:scale-105
-    transition-transform
-    duration-300
-  "
+                      className="w-full h-48 object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                      decoding="async"
                     />
 
                     <div className="p-3">
@@ -354,36 +310,38 @@ function Projects() {
       )}
 
       {activeImage && (
-  <div
-    onClick={() => setActiveImage(null)}
-    className="fixed inset-0 z-[120] flex items-center justify-center px-6 bg-black/80 backdrop-blur-sm"
-  >
-    <button
-      onClick={() => setActiveImage(null)}
-      className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white"
-    >
-      <FiX />
-    </button>
+        <div
+          onClick={() => setActiveImage(null)}
+          className="fixed inset-0 z-[120] flex items-center justify-center px-6 bg-black/80 backdrop-blur-sm"
+        >
+          <button
+            onClick={() => setActiveImage(null)}
+            className="absolute top-6 right-6 w-10 h-10 rounded-full bg-white/10 hover:bg-white/20 flex items-center justify-center text-white"
+          >
+            <FiX />
+          </button>
 
-    <motion.div
-      onClick={(e) => e.stopPropagation()}
-      initial={{ opacity: 0, scale: 0.95 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.25 }}
-      className="max-w-6xl w-full"
-    >
-      <img
-        src={activeImage.image}
-        alt={activeImage.title}
-        className="w-full max-h-[85vh] object-contain rounded-2xl border border-white/10"
-      />
+          <motion.div
+            onClick={(e) => e.stopPropagation()}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.25 }}
+            className="max-w-6xl w-full"
+          >
+            <img
+              src={activeImage.image}
+              alt={activeImage.title}
+              className="w-full max-h-[85vh] object-contain rounded-2xl border border-white/10"
+              loading="lazy"
+              decoding="async"
+            />
 
-      <p className="text-center text-slate-300 mt-4">
-        {activeImage.title}
-      </p>
-    </motion.div>
-  </div>
-)}
+            <p className="text-center text-slate-300 mt-4">
+              {activeImage.title}
+            </p>
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }
